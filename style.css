@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Red Hat';
+    src: url("./fonts/RedHatDisplay-VariableFont_wght.ttf"),
+    url("./fonts/RedHatDisplay-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: 'Red Hat Bold';
+    src: url("./fonts/static/RedHatDisplay-Bold.ttf");
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+body > header, body > footer {
+    flex: none;
+}
+body > main {
+    flex: 1 1 auto;
+}
+
+body {
+    font-family: "Red Hat", serif;
+    background: rgba(225, 152, 42, 0.1) url("./images/pattern-background-desktop.svg") no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, button {
+    font-family: "Red Hat Bold", serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.page-header, .page-footer {
+    padding: 2.5rem 0;
+    margin: auto;
+}
+
+.order-card_header_image {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.order-card {
+    width: 450px;
+    margin: auto;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    box-shadow: 0 5rem 5rem -2.5rem rgba(225, 152, 42, 0.1503);
+}
+
+.order-card_body {
+    margin: 2.5rem 2.5rem 1.5rem;
+}
+
+.order-card_body_info {
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.order-card_body_info_title {
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.order-card_body_info_text {
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.order-card_body_product {
+    display: flex;
+    align-items: center;
+    background-color: rgba(225, 152, 42, 0.1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.order-card_body_product_plan {
+    flex: 1 1 auto;
+    padding: 0 1rem;
+}
+
+.order-card_body_product_plan > h3 {
+    font-weight: 900;
+}
+.order-card_body_product_plan > p {
+    color: #555;
+}
+
+.order-card_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.5rem 2.5rem;
+}
+
+.order-card_footer_button {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #E1982A;
+    box-shadow: 0 2.5rem 2.5rem rgba(225, 152, 42, 0.190291);
+    color: #fff;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+.order-card_footer_button:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+.order-card_footer_button--light {
+    background-color: transparent;
+    color: #555;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 375px) {
+    .order-card {
+        max-width: 90%;
+    }
+}
